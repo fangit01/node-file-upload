@@ -1,0 +1,17 @@
+
+
+<h1><%= typeof msg == "undefined"? msg='please select a file (image only)':msg %></h1>
+
+<form method="post"  action="/upload" method="post" enctype="multipart/form-data">  
+    <div>
+      <label for="file">Choose file to upload</label>
+      <input type="file" id="inputmyfile" name="upload_file">
+    </div>
+    <div>
+      <button>Submit</button>
+    </div>
+   </form>
+
+   
+
+   <!-- enctype="multipart/form-data"   must have this part  -->
